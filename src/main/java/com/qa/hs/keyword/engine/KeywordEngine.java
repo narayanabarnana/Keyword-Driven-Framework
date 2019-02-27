@@ -144,7 +144,7 @@ public class KeywordEngine {
 					} else if(action.equalsIgnoreCase("MouseHover")) {
 						Actions action1=new Actions(driver);
 						action1.moveToElement(element).build().perform();
-						element.click();
+						//element.click();
 					} else if(action.equalsIgnoreCase("JavaScriptExecutorClick")) {
 						JavascriptExecutor js = (JavascriptExecutor)driver;
 						js.executeScript("arguments[0].click();", element);
